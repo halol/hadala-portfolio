@@ -1,7 +1,8 @@
 require 'redcarpet'
 
 activate :directory_indexes
-activate :dato
+activate :dato,
+  token: '30d7d50e02ad0257ca000926d5b73c0d792e491cb02eda4147'
 activate :pagination
 
 activate :external_pipeline,

@@ -2,6 +2,7 @@
 /.bundle
 /build
 /.sass-cache
+/node_modules
 /.cache
 /.tmp
 .DS_Store
