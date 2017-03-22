@@ -19,18 +19,17 @@
           </h6>
 
           <div class="sidebar__intro">
-            <p>Just checking</p>
             <%= markdownify(dato.home.intro_text) %>
           </div>
 
-          <ul class="sidebar__menu">
+          <!-- <ul class="sidebar__menu">
             <li class="<%= current_page.path === 'index.html' ? 'is-active' : '' %>">
               <a href="/">Home</a>
             </li>
             <li class="<%= current_page.path === 'about.html' ? 'is-active' : '' %>">
               <a href="/about">About</a>
             </li>
-          </ul>
+          </ul> -->
           <p class="sidebar__social">
             <% dato.social_profiles.each do |profile| %>
               <a href="<%= profile.url %>" class="social social--<%= profile.profile_type.downcase.gsub(/ +/, '-') %>"></a>
