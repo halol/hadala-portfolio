@@ -4,6 +4,7 @@ export default function initOffcanvasMenu() {
 
   hamburger.addEventListener('click', (e) => {
     e.preventDefault();
+    console.log("test");
     document.querySelector('.container').classList.toggle('is-open');
   });
 }

@@ -1,9 +1,7 @@
 <% content_for(:head) do %>
   <%= dato_meta_tags(work) %>
 <% end %>
-<header>
-  <a href="/">Works</a>
-</header>
+
 <article class="sheet">
   <div class="sheet__inner">
     <h1 class="sheet__title"><%= work.title %></h1>
@@ -29,5 +27,6 @@
     <div class="sheet__gallery">
       <img src="<%= work.cover_image.url(w: 600, fm: 'jpg', auto: 'compress') %>" />
     </div>
+    <a href="/">Back to projects</a>
   </div>
 </article>
